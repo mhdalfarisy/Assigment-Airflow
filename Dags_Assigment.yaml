@@ -1,0 +1,27 @@
+ingestion:
+   - movie
+   - genre
+   - director_mapping
+   - role_mapping
+   - names
+   - ratings
+
+transformation:
+   - resources/sql/tbl_dwh/dwh_rsvs_movie/movie.sql
+   - resources/sql/tbl_dwh/dwh_rsvs_movie/genre.sql
+   - resources/sql/tbl_dwh/dwh_rsvs_movie/director_mapping.sql
+   - resources/sql/tbl_dwh/dwh_rsvs_movie/role_mapping.sql
+   - resources/sql/tbl_dwh/dwh_rsvs_movie/names.sql
+   - resources/sql/tbl_dwh/dwh_rsvs_movie/ratings.sql
+
+
+datamart:
+   - resources/sql/tbl_dwh/dm_rsvs_movie/dim_movie_year_released.sql
+   - resources/sql/tbl_dwh/dm_rsvs_movie/dim_movie_year.sql
+
+
+
+
+
+
+
